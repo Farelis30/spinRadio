@@ -5,7 +5,6 @@ import Footer from "./components/Footer";
 import Listen from "./pages/Listen";
 import News from "./pages/News";
 import Watch from "./pages/Watch";
-import LiveStream from "./pages/LiveStream";
 import AudioPlay from "./components/AudioPlay";
 
 function App() {
@@ -16,7 +15,7 @@ function App() {
         <Navbar />
         <AudioPlay />
         <Routes>
-          <Route path="/" element={<Listen />} />
+          <Route path="/spinRadio" element={<Listen />} />
           <Route path="news" element={<News />} />
           <Route path="watch" element={<Watch />} />
         </Routes>

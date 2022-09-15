@@ -15,7 +15,7 @@ export default function Navbar() {
     <div className="bg-primary-1">
       <div className="container">
         <ul className="navbar-container animate__animated animate__slideInUp">
-          <a href="/" className="menu-link" onClick={showSidebar}>
+          <a href="/spinRadio" className="menu-link" onClick={showSidebar}>
             <li className="menu">
               <BsList />
               <p>MENU</p>
@@ -23,7 +23,7 @@ export default function Navbar() {
           </a>
 
           <li className="navbar-list">
-            <Link to="/">LISTEN</Link>
+            <Link to="/spinRadio">LISTEN</Link>
           </li>
           <li className="navbar-list">
             <Link to="/watch">WATCH</Link>
@@ -32,10 +32,10 @@ export default function Navbar() {
             <Link to="/news">NEWS</Link>
           </li>
           <li className="navbar-list">
-            <a href="/">CHART</a>
+            <a href="/spinRadio">CHART</a>
           </li>
           <li className="navbar-list">
-            <a href="/">EVENTS</a>
+            <a href="/spinRadio">EVENTS</a>
           </li>
         </ul>
       </div>
