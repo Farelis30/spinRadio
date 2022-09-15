@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #252525;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.pages-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.bg-primary-1 {
+  background-color: #252525;
+}
+
+.bg-primary-2 {
+  background-color: #111;
+}
+
+* {
+  --animate-duration: 750ms !important;
+}
