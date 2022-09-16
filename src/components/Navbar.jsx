@@ -46,7 +46,7 @@ export default function Navbar() {
       >
         <div className="sidebar-container">
           <BsChevronLeft className="back-icons" onClick={showSidebar} />
-          <ul className="sidebar-list">
+          <ul className="sidebar-list" onClick={showSidebar}>
             <li className="sidebar-items">
               <Link className="sidebar-link" to="/">
                 LISTEN

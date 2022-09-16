@@ -70,6 +70,13 @@
     padding: 10px;
     cursor: pointer;
   }
+  .categories-dropdown-link {
+    text-decoration: none;
+    color: white;
+  }
+  .categories-dropdown-items:active {
+    background-color: rgb(50, 50, 50);
+  }
 }
 
 @media screen and (max-width: 720px) {

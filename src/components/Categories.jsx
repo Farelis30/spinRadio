@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Categories.css";
 import { BsFillCaretDownFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 export default function Categories() {
   const [categories, setCategories] = useState(false);
@@ -9,30 +10,24 @@ export default function Categories() {
     setCategories(!categories);
   };
 
+  const linkData = [
+    "All",
+    "News",
+    "Entertainment",
+    "Lifestyle",
+    "Music",
+    "Tech",
+    "Sport",
+  ];
+
   return (
     <>
       <ul className="categories-list">
-        <li>
-          <a href="/">All</a>
-        </li>
-        <li>
-          <a href="/">News</a>
-        </li>
-        <li>
-          <a href="/">Entertaiment</a>
-        </li>
-        <li>
-          <a href="/">Lifestyle</a>
-        </li>
-        <li>
-          <a href="/">Music</a>
-        </li>
-        <li>
-          <a href="/">Tech</a>
-        </li>
-        <li>
-          <a href="/">Sport</a>
-        </li>
+        {linkData.map((data, index) => (
+          <li key={index}>
+            <Link to="/watch">{data}</Link>
+          </li>
+        ))}
       </ul>
       <div className="categories-dropdown-list">
         <div className="categories-dropdown-container">
@@ -44,13 +39,15 @@ export default function Categories() {
             <></>
           ) : (
             <div className="categories-dropdown-menu">
-              <div className="categories-dropdown-items">All</div>
-              <div className="categories-dropdown-items">News</div>
-              <div className="categories-dropdown-items">Entertainment</div>
-              <div className="categories-dropdown-items">Lifestyle</div>
-              <div className="categories-dropdown-items">Music</div>
-              <div className="categories-dropdown-items">Tech</div>
-              <div className="categories-dropdown-items">Sport</div>
+              {linkData.map((data, index) => (
+                <Link
+                  to="/watch"
+                  key={index}
+                  className="categories-dropdown-link"
+                >
+                  <div className="categories-dropdown-items">{data}</div>
+                </Link>
+              ))}
             </div>
           )}
         </div>
