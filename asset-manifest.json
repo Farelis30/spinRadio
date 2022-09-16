@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/spinRadio/static/css/main.0ee9b842.css",
-    "main.js": "/spinRadio/static/js/main.9a3aaf16.js",
+    "main.css": "/spinRadio/static/css/main.c0b32aa8.css",
+    "main.js": "/spinRadio/static/js/main.dc182101.js",
     "static/media/jumbotron.jpg": "/spinRadio/static/media/jumbotron.4c161782a0ff3861e69b.jpg",
     "index.html": "/spinRadio/index.html",
-    "main.0ee9b842.css.map": "/spinRadio/static/css/main.0ee9b842.css.map",
-    "main.9a3aaf16.js.map": "/spinRadio/static/js/main.9a3aaf16.js.map"
+    "main.c0b32aa8.css.map": "/spinRadio/static/css/main.c0b32aa8.css.map",
+    "main.dc182101.js.map": "/spinRadio/static/js/main.dc182101.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ee9b842.css",
-    "static/js/main.9a3aaf16.js"
+    "static/css/main.c0b32aa8.css",
+    "static/js/main.dc182101.js"
   ]
 }
