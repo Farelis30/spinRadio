@@ -48,29 +48,29 @@ export default function Navbar() {
           <BsChevronLeft className="back-icons" onClick={showSidebar} />
           <ul className="sidebar-list">
             <li className="sidebar-items">
-              <a className="sidebar-link" href="/">
+              <Link className="sidebar-link" to="/">
                 LISTEN
-              </a>
+              </Link>
             </li>
             <li className="sidebar-items">
-              <a className="sidebar-link" href="/watch">
+              <Link className="sidebar-link" to="/watch">
                 WATCH
-              </a>
+              </Link>
             </li>
             <li className="sidebar-items">
-              <a className="sidebar-link" href="/news">
+              <Link className="sidebar-link" to="/news">
                 NEWS
-              </a>
+              </Link>
             </li>
             <li className="sidebar-items">
-              <a className="sidebar-link" href="/">
+              <Link className="sidebar-link" to="/">
                 CHART
-              </a>
+              </Link>
             </li>
             <li className="sidebar-items">
-              <a className="sidebar-link" href="/">
+              <Link className="sidebar-link" to="/">
                 EVENTS
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
