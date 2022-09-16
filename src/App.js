@@ -15,7 +15,7 @@ function App() {
         <Navbar />
         <AudioPlay />
         <Routes>
-          <Route path="/" element={<Listen />} />
+          <Route path="home" element={<Listen />} />
           <Route path="news" element={<News />} />
           <Route path="watch" element={<Watch />} />
         </Routes>
