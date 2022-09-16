@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import HeaderMenu from "./components/HeaderMenu";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -15,7 +15,7 @@ function App() {
         <Navbar />
         <AudioPlay />
         <Routes>
-          <Route path="home" element={<Listen />} />
+          <Route path="/" element={<Listen />} />
           <Route path="news" element={<News />} />
           <Route path="watch" element={<Watch />} />
         </Routes>
